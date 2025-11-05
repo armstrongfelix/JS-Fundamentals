@@ -1,7 +1,5 @@
-let name1 = "HBTN";
-let nmae2 = "Python fun";
-
-function printNanes(name1, name2) {
-  console.log(name1 + " is " + name2);
-}
-printNanes(name1,nmae2)
+function printNames() {
+    const args = process.argv.slice(2);
+    const first = args[0];
+    const second = args[1];
+    console.log(`${first} is ${second}`);
